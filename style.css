@@ -2,3 +2,31 @@ body {
     background-color: rgb(218, 218, 218);
     text-align: center;
 }
+
+h1 {
+    text-shadow: 2px 2px 5px rgb(140, 237, 254);
+}
+
+table {
+    border-color: rgb(140, 237, 254);
+    border-style: groove;
+    height: 120px;
+    width: 200px;
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+    background-color: #D6EEEE;
+}
+
+#title {
+    text-align: center;
+}
+
+#prvi_red {
+    color: blueviolet;
+}
+
+.warning {
+    font-style: italic;
+}
