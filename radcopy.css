@@ -1,6 +1,9 @@
 .div-head {
-    background-color: rgb(0, 96, 125);
+    background-color: #5D86C2;
     height: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .topnav {
@@ -28,7 +31,8 @@
 }
 
 #drpa {
-    font-size: 12px;
+    font-size: 20px;
+    color: white;
 }
 
 .dropbtn1 {
@@ -38,31 +42,35 @@
     width: 80px;
     height: 20px;
     padding: 2px;
+    float: right;
+    margin-right: 7px;
+    margin-top: 10px;
 }
 
 .dropdown1 {
-    float: right;
-    margin-right: 25px;
+    position: relative;
+    display: inline-block;
 }
 
 .dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: rgb(155, 161, 167);
-    min-width: 140px;
+    background-color: #002556;
+    width: 80px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    margin-left: 86%;
 }
 
 dropdown-content1 a {
-    color: black;
+    color: white;
     padding: 8px 12px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content1 a:hover {
-    background-color: darkblue;
+    background-color: #E6F4F1;
 }
 
 .dropdown1:hover .dropdown-content1 {
@@ -70,14 +78,20 @@ dropdown-content1 a {
 }
 
 .dropdown1:hover .dropbtn1 {
-    background-color: aquamarine;
+    background-color: #E6F4F1;
 }
+
+
+/*-----------------------------*/
 
 .container {
     margin: auto;
     width: 50%;
     padding: 10px;
-    background: rgb(93, 134, 194);
+    margin-top: 10px;
+    /*
+    background: rgb(68, 70, 85);
+    background: linear-gradient(0deg, rgba(68, 70, 85, 1) 0%, rgba(63, 69, 100, 1) 50%, rgba(168, 170, 188, 1) 100%);*/
 }
 
 .container .box {
@@ -85,9 +99,6 @@ dropdown-content1 a {
     margin: 50px;
     display: table;
 }
-
-
-/*-----------------------------*/
 
 .container .box .box-row {
     display: table-row;
@@ -100,24 +111,24 @@ dropdown-content1 a {
 }
 
 .container .box .box-cell.box1 {
-    background: rgb(93, 134, 194);
+    /* background-color: #444655;*/
     color: white;
     text-align: center;
-    border: 2px #004469 solid;
+    border: 2px #A9AABC solid;
 }
 
 .container .box .box-cell.box2 {
-    background: rgb(93, 134, 194);
+    /* background-color: #444655;*/
     text-align: center;
     color: white;
-    border: 2px #004469 solid;
+    border: 2px #A9AABC solid;
 }
 
 .container .box .box-cell.box3 {
-    background: rgb(93, 134, 194);
+    /* background-color: #444655;*/
     text-align: center;
     color: white;
-    border: 2px #004469 solid;
+    border: 2px #A9AABC solid;
 }
 
 img {
@@ -143,6 +154,12 @@ img {
     width: 45px;
     float: right;
     margin-right: 15px;
+    background-color: #6E7BBE;
+    border: 1px solid #434c79;
+}
+
+#btn:hover {
+    background-color: #5e6aa3;
 }
 
 #txt {
@@ -156,20 +173,20 @@ img {
 /*dropbtn*/
 
 .dropbtn2 {
-    background-color: #005f92;
+    background-color: #6E7BBE;
     color: white;
-    padding: 7px;
-    text-align: center;
+    padding: 16px;
     font-size: 16px;
     height: 25px;
     border: none;
     cursor: pointer;
     display: inline-block;
+    height: auto;
 }
 
 .dropbtn2:hover,
 dropdown2:focus {
-    background-color: #004469;
+    background-color: #6976b3;
 }
 
 #myInput {
@@ -184,14 +201,13 @@ dropdown2:focus {
 }
 
 #myInput:focus {
-    outline: 3px solid #ddd
+    outline: 3px solid #ddd;
 }
 
 .dropdown2 {
     position: relative;
     display: inline-block;
-    width: 100%;
-    height: 45px;
+    background-color: #6E7BBE;
 }
 
 .dropdown-content2 {
@@ -223,16 +239,15 @@ dropdown2:focus {
 
 .topnav1 {
     overflow: hidden;
-    background-color: #e9e9e9;
-    width: 150px;
+    background-color: #6E7BBE;
 }
 
-.topnav input[type=text] {
-    float: right;
+.topnav1 input[type=text] {
     padding: 6px;
-    border: none;
-    margin-top: 8px;
-    margin-right: 16px;
+    border: solid black 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 15px;
     font-size: 17px;
 }
 
@@ -249,7 +264,23 @@ dropdown2:focus {
     }
 }
 
-.topbotton {
-    height: 40px;
-    background-color: #486c7f;
+
+/*------------------------------------------------------*/
+
+.topbottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #6E7BBE;
+}
+
+
+/*--------------------------------------------------------------*/
+
+body {
+    /*
+    background: rgb(171, 68, 129);
+    background: linear-gradient(0deg, rgba(171, 68, 129, 1) 0%, rgba(160, 83, 151, 1) 21%, rgba(145, 97, 169, 1) 35%, rgba(128, 111, 182, 1) 45%, rgba(110, 123, 190, 1) 100%);*/
+    background-image: url("jugi.jpg");
+    background-color: #cccccc;
 }
